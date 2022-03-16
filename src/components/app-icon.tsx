@@ -1,9 +1,12 @@
+import { Link } from "solid-app-router";
+
 interface Props {
     iconColor: string;
+    appLink: string;
     children?: any;
 };
 
-export default function AppIcon({iconColor, children }: Props) {
+export default function AppIcon({iconColor, appLink, children }: Props) {
     const color = {
         "emerald": "from-emerald-400 to-emerald-600",
         "teal": "from-teal-500 to-teal-700",
@@ -18,8 +21,10 @@ export default function AppIcon({iconColor, children }: Props) {
     };
 
     return (
-        <button className={`w-[56px] h-[56px] rounded-[12px] bg-gradient-to-r ${color[iconColor] || ""}`}>
-            { children }
-        </button>
+        <Link href={appLink}>
+            <div className={`w-[56px] h-[56px] rounded-[12px] bg-gradient-to-r ${color[iconColor] || ""}`}>
+                { children }
+            </div>
+        </Link>
     );
 }
