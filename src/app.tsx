@@ -1,49 +1,21 @@
 import type { Component } from 'solid-js';
-import { Link, useRoutes, useLocation } from 'solid-app-router';
-
+import { useRoutes } from 'solid-app-router';
 import { routes } from './routes';
+import frame from './assets/images/frame.svg';
 
 const App: Component = () => {
-  const location = useLocation();
-  const Route = useRoutes(routes);
+    const Route = useRoutes(routes);
 
-  return (
-    <>
-      <nav class="bg-gray-200 text-gray-900 px-4">
-        <ul class="flex items-center">
-          <li class="py-2 px-4">
-            <Link href="/" class="no-underline hover:underline">
-              Home
-            </Link>
-          </li>
-          <li class="py-2 px-4">
-            <Link href="/about" class="no-underline hover:underline">
-              About
-            </Link>
-          </li>
-          <li class="py-2 px-4">
-            <Link href="/error" class="no-underline hover:underline">
-              Error
-            </Link>
-          </li>
-
-          <li class="text-sm flex items-center space-x-1 ml-auto">
-            <span>URL:</span>
-            <input
-              class="w-75px p-1 bg-white text-sm rounded-lg"
-              type="text"
-              readOnly
-              value={location.pathname}
-            />
-          </li>
-        </ul>
-      </nav>
-
-      <main>
-        <Route />
-      </main>
-    </>
-  );
+    return (
+        <main className="flex justify-center items-center w-full min-h-screen bg-slate-800">
+            <div className="relative">
+                <img className="w-[424px]" src={frame} alt="" />
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[376px] h-[668px] rounded-[4px] border-slate-800 border overflow-hidden">
+                    <Route />
+                </div>
+            </div>
+        </main>
+    );
 };
 
 export default App;

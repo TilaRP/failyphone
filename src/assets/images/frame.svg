@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 848 1568" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-205.5,-2876.37)">
+        <g transform="matrix(3.89435,0,0,1,-18977.6,2072.87)">
+            <g id="Phone-Gray" serif:id="Phone Gray" transform="matrix(0.256782,0,0,1,4497.7,-516.115)">
+                <g id="Frame">
+                    <g id="Frame1" serif:id="Frame" transform="matrix(1.26756,0,0,1.86445,2897.07,-1273.83)">
+                        <path d="M-301,1444.63C-301,1415.03 -336.35,1391 -379.892,1391L-891.108,1391C-934.65,1391 -970,1415.03 -970,1444.63L-970,2178.37C-970,2207.97 -934.65,2232 -891.108,2232L-379.892,2232C-336.35,2232 -301,2207.97 -301,2178.37L-301,1444.63Z" style="fill:rgb(23,23,23);"/>
+                    </g>
+                    <g id="microphone" transform="matrix(1.59006,0,0,1,3025.7,1440.62)">
+                        <path d="M-507,1389C-507,1384.59 -509.254,1381 -512.031,1381L-662.969,1381C-665.746,1381 -668,1384.59 -668,1389C-668,1393.41 -665.746,1397 -662.969,1397L-512.031,1397C-509.254,1397 -507,1393.41 -507,1389Z" style="fill:rgb(38,38,38);"/>
+                    </g>
+                    <g id="speaker-and-camera" serif:id="speaker and camera" transform="matrix(1,0,0,1,7.33296,-1.38473)">
+                        <g transform="matrix(1.01863,0,0,0.75,2702.65,337.25)">
+                            <path d="M-507,1389C-507,1384.59 -509.639,1381 -512.89,1381L-662.11,1381C-665.361,1381 -668,1384.59 -668,1389C-668,1393.41 -665.361,1397 -662.11,1397L-512.89,1397C-509.639,1397 -507,1393.41 -507,1389Z" style="fill:rgb(38,38,38);"/>
+                        </g>
+                        <g transform="matrix(1,0,0,1,2690.2,-10)">
+                            <circle cx="-700" cy="1389" r="8" style="fill:rgb(64,64,64);"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
