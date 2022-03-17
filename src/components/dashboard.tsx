@@ -1,4 +1,4 @@
-import AppIcon from "./app-icon";
+import AppIcon from "@components/app-icon";
 
 export default function Dashboard() {
     return (
@@ -8,9 +8,9 @@ export default function Dashboard() {
                 <AppIcon appLink="/" iconColor="fuchsia" />
                 <AppIcon appLink="/" iconColor="green" />
                 <AppIcon appLink="/" iconColor="yellow" />
-                <AppIcon appLink="/" iconColor="gray" />
+                <AppIcon appLink="/settings" iconColor="gray" />
                 <AppIcon appLink="/" iconColor="emerald" />
-                <AppIcon appLink="/message" iconColor="teal" />
+                <AppIcon appLink="/messages" iconColor="teal" />
                 <AppIcon appLink="/" iconColor="orange" />
                 <AppIcon appLink="/" iconColor="violet" />
                 <AppIcon appLink="/" iconColor="indigo" />
