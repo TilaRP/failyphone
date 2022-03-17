@@ -1,14 +1,12 @@
-import { createSignal } from "solid-js";
+import { Component } from "solid-js";
 
-interface Props {
-    dotColor: string;
-    action: () => void;
-    initialState: boolean;
-}
+type toggleButtonProps = {
+    dotColor: string,
+    onChange: (event) => void,
+    defaultChecked: boolean
+};
 
-export default function ToggleButton({ dotColor, action, initialState }: Props) {
-    const [isActive, setIsActive] = createSignal(initialState);
-
+export const ToggleButton: Component<toggleButtonProps> = ({ dotColor, onChange, defaultChecked }) => {
     const color = {
         "emerald": "bg-emerald-600",
         "teal": "bg-teal-700",
@@ -22,14 +20,19 @@ export default function ToggleButton({ dotColor, action, initialState }: Props) 
         "green": "bg-green-800",
     };
 
-    function handleClick() {
-        action();
-        setIsActive(!isActive());
-    }
-
     return (
-        <button className="relative w-10 h-4 rounded-full bg-slate-300" onClick={handleClick}>
-            <span className={`absolute top-1/2 left-0 -translate-y-1/2 block w-6 h-6 rounded-full ${color[dotColor] || ""} ${isActive() ? "translate-x-4" : ""}`}></span>
-        </button>
+        <span className="relative w-[58px] h-[38px] p-3">
+            <input
+                className="absolute z-50 top-0 left-0 w-full h-full opacity-0 cursor-pointer peer"
+                type="checkbox"
+                onChange={onChange}
+                checked={defaultChecked}
+                aria-label="toggle-button"
+            />
+            <span className="block w-full h-full rounded-full bg-slate-300 dark:bg-slate-700"></span>
+            <span className="absolute z-40 top-1/2 left-3 -translate-y-1/2 block w-5 h-5 rounded-full bg-gray-500 transition-transform peer-checked:translate-x-3.5"></span>
+        </span>
     );
 }
+
+export default ToggleButton;

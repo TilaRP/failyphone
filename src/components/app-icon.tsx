@@ -21,8 +21,8 @@ export default function AppIcon({iconColor, appLink, children }: Props) {
     };
 
     return (
-        <Link className="rounded-[12px] overflow-hidden focus:outline-neutral-200" href={appLink}>
-            <div className={`w-[56px] h-[56px] bg-gradient-to-r ${color[iconColor] || ""}`}>
+        <Link className="rounded-xl overflow-hidden focus:outline-neutral-200" href={appLink}>
+            <div className={`w-14 h-14 bg-gradient-to-l ${color[iconColor] || ""}`}>
                 { children }
             </div>
         </Link>
